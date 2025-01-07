@@ -2,9 +2,11 @@
 
 
 export const verifyBusinessAccount = async (username) => {
-  // Get business details directly from store
+  
   const businessDetails = useBusinessStore.getState().businessDetails;
 
+
+  
   try {
     const response = await fetch('/api/business-verify', {
       method: 'POST',
