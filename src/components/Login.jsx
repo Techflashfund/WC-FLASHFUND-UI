@@ -156,17 +156,25 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-blue-900">
+    <div className="min-h-screen bg-black "
+    style={{
+      backgroundImage: `
+        linear-gradient(rgba(25, 25, 25, 0.7) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(25, 25, 25, 0.7) 1px, transparent 1px)
+      `,
+      backgroundSize: '40px 40px',
+      backgroundPosition: '-1px -1px'
+    }}>
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -inset-[10px] opacity-50">
-          <div className="w-full h-full bg-[radial-gradient(circle_at_50%_50%,_#3B82F6_0%,_transparent_50%)] blur-xl" />
+          <div className="w-full h-full" />
         </div>
       </div>
 
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="container mx-auto min-h-screen relative z-10"
+        className=" mx-auto min-h-screen relative z-10"
       >
         <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 px-4 py-8">
           {/* Form Section */}
